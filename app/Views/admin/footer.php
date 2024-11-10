@@ -55,18 +55,18 @@
     </div>
 </div> -->
         <!--   Core JS Files   -->
-<script src="<?php echo base_url() . 'vendor/material/' ?>/assets/js/core/jquery.min.js"></script>
-<script src="<?php echo base_url() . 'vendor/material/' ?>/assets/js/core/popper.min.js"></script>
-<script src="<?php echo base_url() . 'vendor/material/' ?>/assets/js/core/bootstrap.min.js"></script>
-<script src="<?php echo base_url() . 'vendor/material/' ?>/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<script src="<?php echo base_url() . 'thirdparty/' ?>/assets/js/core/jquery.min.js"></script>
+<script src="<?php echo base_url() . 'thirdparty/' ?>/assets/js/core/popper.min.js"></script>
+<script src="<?php echo base_url() . 'thirdparty/' ?>/assets/js/core/bootstrap.min.js"></script>
+<script src="<?php echo base_url() . 'thirdparty/' ?>/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 
 <!-- Chart JS -->
-<script src="<?php echo base_url() . 'vendor/material/' ?>/assets/js/plugins/chartjs.min.js"></script>
+<script src="<?php echo base_url() . 'thirdparty/' ?>/assets/js/plugins/chartjs.min.js"></script>
 <!--  Notifications Plugin    -->
-<script src="<?php echo base_url() . 'vendor/material/' ?>/assets/js/plugins/bootstrap-notify.js"></script>
+<script src="<?php echo base_url() . 'thirdparty/' ?>/assets/js/plugins/bootstrap-notify.js"></script>
 <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="<?php echo base_url() . 'vendor/material/' ?>/assets/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
-<script src="<?php echo base_url() . 'vendor/material/' ?>/assets/demo/demo.js"></script>
+<script src="<?php echo base_url() . 'thirdparty/' ?>/assets/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
+<script src="<?php echo base_url() . 'thirdparty/' ?>/assets/demo/demo.js"></script>
 <!-- <script>
     $(document).ready(function() {
         $().ready(function() {
@@ -179,14 +179,14 @@
     });
 </script> -->
 
-<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+<!-- <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
 <script>
     window.TrackJS &&
         TrackJS.install({
             token: "ee6fab19c5a04ac1a32a645abde4613a",
             application: "black-dashboard-free"
         });
-</script>
+</script> -->
 </body>
 
 </html>
