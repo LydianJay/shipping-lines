@@ -2,13 +2,10 @@
 
 namespace App\Controllers;
 
-class Routes extends BaseController
+class Home extends BaseController 
 {
-
     public function index()
     {
+        
     }
-
-
-    
 }

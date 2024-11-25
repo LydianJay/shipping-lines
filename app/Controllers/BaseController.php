@@ -43,6 +43,7 @@ abstract class BaseController extends Controller
      */
     // protected $session;
     protected $data;
+    protected $db;
     /**
      * @return void
      */
@@ -52,8 +53,36 @@ abstract class BaseController extends Controller
         parent::initController($request, $response, $logger);
         $this->data['title']        = 'Shipping Lines';
         $this->data['site_owner']   = 'JV Coro and friends';
+        $this->db           = \Config\Database::connect();
         // Preload any models, libraries, etc, here.
-
         // E.g.: $this->session = \Config\Services::session();
+    }
+
+
+    public function setMessage($msg)
+    {
+        session()->setFlashdata('msg', $msg);
+    }
+
+    public function getMessage()
+    {
+        return session()->getFlashdata('msg');
+    }
+
+
+    public function validateSession()
+    {
+        if(session()->get('auth') == null) {
+            session()->setFlashdata('msg', 'Invalid Session, Please Login');
+            return false;
+        }
+        return true;
+    }
+
+    public function invalidateSession()
+    {
+        session()->remove('auth');
+        session()->setFlashdata('msg', 'Signed Out');
+        return redirect()->to(site_url(''));
     }
 }

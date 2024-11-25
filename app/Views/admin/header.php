@@ -56,6 +56,7 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
+                    
                     <li>
                         <a href="./icons.html">
                             <i class="tim-icons icon-atom"></i>
@@ -95,9 +96,7 @@
                             
                             <li class="dropdown nav-item">
                                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                    <div class="photo">
-                                        <img src="<?php echo base_url() . 'vendor/material/' ?>/assets/img/default-avatar.png" alt="Profile Photo">
-                                    </div>
+
                                     <b class="caret d-none d-lg-block d-xl-block"></b>
                                     <p class="d-lg-none">
                                         Log out
@@ -107,7 +106,7 @@
                                     <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Profile</a></li>
                                     <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Settings</a></li>
                                     <li class="dropdown-divider"></li>
-                                    <li class="nav-link"><a href="javascript:void(0)" class="nav-item dropdown-item">Log out</a></li>
+                                    <li class="nav-link"><a href="<?php echo base_url() . 'logout' ?>" class="nav-item dropdown-item">Log out</a></li>
                                 </ul>
                             </li>
                             <li class="separator d-lg-none"></li>

@@ -6,15 +6,17 @@ class Home extends BaseController
 {
 
     public function index()
-    {
-        $this->dashboard();
-    }
+    {   
+        if(!$this->validateSession()) {
+            return redirect()->to(site_url(''));
+        }
+        
 
-
-    public function dashboard()
-    {
 
         echo view('admin/header', $this->data);
         echo view('admin/footer');
     }
+
+
+
 }
