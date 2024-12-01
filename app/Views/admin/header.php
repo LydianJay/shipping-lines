@@ -56,7 +56,14 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    
+
+                    <li class="active ">
+                        <a href="<?php echo base_url() . 'port' ?>">
+                            <i class="tim-icons icon-chart-pie-36"></i>
+                            <p>Ports</p>
+                        </a>
+                    </li>
+
                     <li>
                         <a href="./icons.html">
                             <i class="tim-icons icon-atom"></i>
@@ -79,7 +86,7 @@
                             </button>
                         </div>
                         <!-- Module name below -->
-                        <a class="navbar-brand" href="javascript:void(0)">Dashboard </a>
+                        <a class="navbar-brand" href="javascript:void(0)"> </a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -93,7 +100,7 @@
                                     <span class="d-lg-none d-md-block">Search</span>
                                 </button>
                             </li> -->
-                            
+
                             <li class="dropdown nav-item">
                                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
 
