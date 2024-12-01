@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-// $routes->get('/', 'Home::index');
+$routes->get('/booking', 'Booking::index');
 $routes->get('/', 'Account::index');
 $routes->get('/dashboard', 'Home::index');
 $routes->post('/login', 'Account::auth');
@@ -29,7 +29,7 @@ $routes->post('/addvessel/post', 'Vessel::addvessel');
 
 
 // ============== Vessels =========================
-$routes->get('/routes', 'Routes::index');
-$routes->get('/addroute', 'Routes::add');
-$routes->post('/addroute/post', 'Routes::addvessel');
+$routes->get('/course', 'Course::index');
+$routes->get('/addcourse', 'Course::add');
+$routes->post('/addcourse/post', 'Course::addcourse');
 // ================================================

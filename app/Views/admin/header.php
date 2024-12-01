@@ -51,9 +51,9 @@
                 </div>
                 <ul class="nav">
                     <li class="active ">
-                        <a href="./dashboard.html">
+                        <a href="<?php echo base_url() . 'course' ?>">
                             <i class="tim-icons icon-chart-pie-36"></i>
-                            <p>Dashboard</p>
+                            <p>Course</p>
                         </a>
                     </li>
 
@@ -70,12 +70,7 @@
                         </a>
                     </li>
 
-                    <li>
-                        <a href="./icons.html">
-                            <i class="tim-icons icon-atom"></i>
-                            <p>Not Active</p>
-                        </a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
