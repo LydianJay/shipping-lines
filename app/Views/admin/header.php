@@ -63,6 +63,12 @@
                             <p>Ports</p>
                         </a>
                     </li>
+                    <li class="active ">
+                        <a href="<?php echo base_url() . 'vessel' ?>">
+                            <i class="tim-icons icon-chart-pie-36"></i>
+                            <p>Vessels</p>
+                        </a>
+                    </li>
 
                     <li>
                         <a href="./icons.html">
