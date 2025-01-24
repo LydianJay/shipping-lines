@@ -28,7 +28,7 @@ $routes->post('/addvessel/post', 'Vessel::addvessel');
 
 
 
-// ============== Vessels =========================
+// ============== Course =========================
 $routes->get('/course', 'Course::index');
 $routes->get('/addcourse', 'Course::add');
 $routes->post('/addcourse/post', 'Course::addcourse');

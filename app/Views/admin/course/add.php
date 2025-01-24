@@ -61,7 +61,7 @@
                         </div>
                         <div class="col">
                             <label>Vessel: </label>
-                            <select class="form-select px-2 mx-2" name="to">
+                            <select class="form-select px-2 mx-2" name="vesselID">
                                 <?php if (!empty($vessels)) { ?>
 
                                     <option value="<?php echo $vessels[0]->vessel_id; ?>" selected>

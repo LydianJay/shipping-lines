@@ -51,21 +51,30 @@ class Course extends BaseController
     }
 
 
-    // public function addvessel()
-    // {
-    //     $vesselname     = $this->request->getPost('vesselname');
-    //     $capacity       = $this->request->getPost('capacity');
-    //     $description    = $this->request->getPost('description');
+    public function addcourse()
+    {
+        $from       = $this->request->getPost('from');
+        $to         = $this->request->getPost('to');
+        $vesselID   = $this->request->getPost('vesselID');
+        $departure  = $this->request->getPost('time');
+        $date       = $this->request->getPost('date');
 
-    //     $data = [
-    //         'name'          => $vesselname,
-    //         'capacity'      => $capacity,
-    //         'description'   => $description,
-    //         'status'        => 1,
-    //     ];
+        $data = [
+            'from_id'           => $from,
+            'to_id'             => $to,
+            'vessel_id'         => $vesselID,
+            'departure'         => $departure,
+        ];
 
-    //     $this->db->table('vessel')->insert($data);
-    //     session()->setFlashdata('msg', 'Vessel Added!');
-    //     return redirect()->to(site_url('addvessel'));
-    // }
+        if($vesselID != 0 && $from != 0 && $to != 0) {
+            $this->db->table('routes')->insert($data);
+            session()->setFlashdata('msg', 'Course Added!');
+            return redirect()->to(site_url('addcourse'));
+        } else {
+            session()->setFlashdata('msg', 'Course Not Added!');
+            return redirect()->to(site_url('addcourse'));
+        }
+
+        
+    }
 }
